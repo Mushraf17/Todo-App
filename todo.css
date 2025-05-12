@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Agbalumo';
+}
+
+body {
+  background-color: #081d01;
+  overflow: hidden; 
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  background-color: #eff1f2;
+  padding: 20px;
+  border-radius: 70px;
+  margin: 100px auto;
+}
+
+h4 {
+  padding-left: 30px;
+  color: #000;
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+}
+
+.main img {
+  width: 30px;
+  padding-left: 5px;
+  border-radius: 20%;
+}
+
+.main .sub {
+  margin: 5px 10px;
+  padding: 8px;
+  background-color: #bed8b5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main .sub input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #000;
+  flex: 1;
+}
+
+.main .sub button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #011a09;
+  color: #fff;
+  cursor: pointer;
+}
+
+ul {
+  margin: 10px 20px;
+}
+
+ul li {
+  padding: 8px 8px 8px 36px;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #d5e8cd;
+  color: #011a09;
+  margin-bottom: 3px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+ul li::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-image: url(Images/unchecked.png);
+  background-size: cover;
+  top: 8px;
+  left: 8px;
+  background-position: center;
+  border-radius: 50%;
+}
+
+ul li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+ul li.completed::before {
+  background-image: url(Images/check.png);
+}
+
